@@ -24,11 +24,11 @@ int main(){
     cout<<"A: ";
     cin>>A;
     cout<<"B: ";
-    if(A<2 || B>2000000000){
+    cin>>B;
+    if(A<2 || A>2000000000 || B<2 || B>2000000000){
         cout<<"invalid nums!";
         return 0;
     }
-    cin>>B;
     map <int, int> primeFactorsA;
     getPrimeFactors(A, primeFactorsA);
     for(auto [primeFactor, primeFactorQuantity] : primeFactorsA){

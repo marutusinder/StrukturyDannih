@@ -65,6 +65,9 @@ int main(){
     generateMatrix(A);
     generateMatrix(B);
 
+    double c = 2.0 * N * N * N;
+    cout << "Сложность алгоритма c: " << c << endl;
+    
     double t1, t2, t3;
 
     t1 = measure([&](){
@@ -81,8 +84,6 @@ int main(){
     t3 = measure([&](){
         multiplyOptimized(A, B, C);
     });
-
-    double c = 2.0 * N * N * N;
 
     double p1 = (c / t1) * 0.000001;
     double p2 = (c / t2) * 0.000001;

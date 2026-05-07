@@ -4,7 +4,6 @@
 #include <chrono>
 #include <random>
 #include <windows.h>
-#include <immintrin.h>
 extern "C" {
 #include <cblas.h>
 }
